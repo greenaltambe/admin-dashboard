@@ -13,11 +13,98 @@
     grid-template-columns: 1fr 4fr;
 }
 
+/* Navbar */
 .navbar {
-    background-color: lightgray;
+    background-color: white;
     grid-row: 1 / 2;
+    padding: 24px;
 }
 
+.navbar svg {
+    height: 24px;
+    width: 24px;
+}
+
+.nav-upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-grow: 4;
+}
+
+.search input {
+    border-radius: 16px;
+    width: 80%;
+    border: none;
+    padding: 6px;
+    background-color: #e4e8ed;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.nav-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#dog-id {
+    fill: yellow;
+    background-color: black;
+    border-radius: 18px;
+}
+
+.nav-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-lower .nav-greet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-greet svg {
+    width: 48px;
+    height: 48px;
+}
+
+.greet-text p:first-child {
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.greet-text p:last-child {
+    font-weight: bold;
+}
+
+.button-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+
+button {
+    background-color: deepskyblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 6px;
+    border-radius: 18px;
+    width: 100px;
+}
 
 /* Sidebar */
 .sidebar {
@@ -55,6 +142,8 @@
     fill: white;
 }
 
+
+/* Content */
 .content {
     background-color: gray;
     grid-row: 2 / 3;
